@@ -177,7 +177,7 @@ var baseLayer = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.pn
     };
   
     var map = L.map("map", {
-      center: [36.778259, -119.417931],
+      center: [32.165623, -82.900078],
   zoom: 6,
       layers: [baseLayer]
     });
