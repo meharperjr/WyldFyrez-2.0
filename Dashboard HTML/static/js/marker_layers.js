@@ -6,14 +6,14 @@ var baseLayer = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.pn
   });
   
 
-  d3.csv("/data/CA_GA_filtered_fires.csv").then(function(data) { 
-    console.log(data[0])
+  d3.csv("/data/CA_filtered_fires.csv").then(function(data) { 
+    console.log(data[0].LATITUDE);
 
     //["NONE", "ARREST, BOOKED", "JUVENILE BOOKED", "EXCEPTIONAL CLEARANCE", "UNFOUNDED", "CLEARED-CONTACT JUVENILE FOR MORE INFO"]
-  
+   
     var arson = [];
     var campfire = [];
-    var Eq_use = [];
+    var eq_use = [];
     var children = [];
     var debris_burning = [];
     var fireworks = [];
@@ -24,59 +24,64 @@ var baseLayer = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.pn
     var railroad = [];
     var smoking = [];
     var structure = [];
+    var markers = []
     
-    
-
   
     for (var i = 0; i < data.length; i++) {
-      var lat = data[i].LATITUDE;
+      var lat = data[i].LATITUDE; 
     var long = data[i].LONGITUDE;
-  
-      switch (data[i].subg_name) {
+    
+      markers.push( L.marker([lat,long]).bindPopup(data[i].STAT_CAUSE_DESCR));
+
+      switch (data[i].STAT_CAUSE_DESCR) {
           case "Arson":
             arson.push([lat, long]);
+         
             break;
           case "Campfire":
             campfire.push([lat, long]);
             break;
-          case "Equipment ":
-            Eq_use.push([lat, long]);
+          case "Equipment Use":
+            eq_use.push([lat, long]);
             break;
-          case "Eq_useernative Country":
+          case "Children":
             children.push([lat, long]);
             break;
-          case "Eq_useernative Rock":
+          case "Debris Burning":
             debris_burning.push([lat, long]);
             break;
-          case "Big Band":
+          case "Fireworks":
             fireworks.push([lat, long]);
             break;
-          case "lightning":
+          case "Lightning":
             lightning.push([lat, long]);
             break;
-          case "children's Theatre":
+          case "Miscellaneous":
             misc.push([lat, long]);
             break;
-          case "mis_undef":
+          case "Missing/Undefined":
             mis_undef.push([lat, long]);
             break;
-          case "powerline/Vocal":
+          case "Powerline":
             powerline.push([lat, long]);
             break;
-          case "railroad":
+          case "Railroad":
             railroad.push([lat, long]);
             break;
-          case "smoking":
+          case "Smoking":
             smoking.push([lat, long]);
             break; 
-          case "Contemporary R&B":
+          case "Structure":
             structure.push([lat, long]);
             break; 
           
           default:
             break;
       }
+
     }
+    var marker = L.layerGroup(markers)
+
     var heatarson = L.heatLayer(arson, {
       radius: 50,
       blur: 35
@@ -87,7 +92,7 @@ var baseLayer = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.pn
       blur: 35
     });
   
-    var heatEq_use = L.heatLayer(Eq_use, {
+    var heateq_use = L.heatLayer(eq_use, {
       radius: 50,
       blur: 35
     });
@@ -154,27 +159,28 @@ var baseLayer = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.pn
     
     // Create an overlay object
     var overlayMaps = {
-      "Adult Eq_useernative": heatarson,
-      "Adult Contemporary": heatcampfire,
-      "Eq_useernative": heatEq_use,
-      "Eq_useernative Country": heatchildren,
-      "Eq_useernative Rock": heatdebris_burning,
-      "Big Band": heatfireworks,
-      "lightning": heatlightning,
-      "children's Theatre": heatmisc,
-      "mis_undef": heatmis_undef,
-      "powerline/Vocal": heatpowerline,
-      "railroad": heatrailroad,
-      "smoking": heatsmoking,
-      "Contemporary R&B": heatstructure,
+      "Arson": heatarson,
+      "Camp Fire": heatcampfire,
+      "Equipment Use": heateq_use,
+      "Children": heatchildren,
+      "Debris Burning": heatdebris_burning,
+      "Fireworks": heatfireworks,
+      "Lightning": heatlightning,
+      "Miscellaneous": heatmisc,
+      "Missing/Undefined": heatmis_undef,
+      "Powerline": heatpowerline,
+      "Railroad": heatrailroad,
+      "Smoking": heatsmoking,
+      "Structure": heatstructure,
+      "markers": marker,
       
       
     };
   
-    var map = L.map("heat_map", {
-      center: [45.512, -122.658],
-  zoom: 13,
-      layers: [baseLayer, heatEq_use]
+    var map = L.map("map", {
+      center: [36.778259, -119.417931],
+  zoom: 6,
+      layers: [baseLayer]
     });
   
     L.control.layers(baseMaps, overlayMaps, {
