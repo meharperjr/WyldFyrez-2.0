@@ -1,6 +1,6 @@
 // Creating map object
-var map = L.map("map", {
-    center: [36.778259, -119.417931],
+var map = L.map("ca_clusmap", {
+    center: [32.165623, -82.900078],
     zoom: 6
   });
   
@@ -14,7 +14,7 @@ var map = L.map("map", {
   
 
   
-   d3.csv("/data/CA_filtered_fires.csv").then(function(data) { 
+   d3.csv("/data/GA_filtered_fires.csv").then(function(data) { 
     // console.log(data[0].LATITUDE);
   
     // Create a new marker cluster group

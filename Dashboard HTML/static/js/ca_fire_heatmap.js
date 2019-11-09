@@ -176,7 +176,7 @@ var baseLayer = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.pn
       
     };
   
-    var map = L.map("map", {
+    var map = L.map("ca_heatmap", {
       center: [36.778259, -119.417931],
   zoom: 6,
       layers: [baseLayer]

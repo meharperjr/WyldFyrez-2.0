@@ -1,5 +1,5 @@
 // Creating map object
-var map = L.map("map", {
+var map = L.map("ga_clusmap", {
     center: [32.165623, -82.900078],
     zoom: 6
   });
