@@ -7,7 +7,7 @@ var baseLayer = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.pn
   
 
   d3.csv("/data/GA_filtered_fires.csv").then(function(data) { 
-    console.log(data[0].LATITUDE);
+    
 
     //["NONE", "ARREST, BOOKED", "JUVENILE BOOKED", "EXCEPTIONAL CLEARANCE", "UNFOUNDED", "CLEARED-CONTACT JUVENILE FOR MORE INFO"]
    
@@ -176,7 +176,7 @@ var baseLayer = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.pn
       
     };
   
-    var map = L.map("ga_heatmap", {
+    var myMap = L.map("ga_heatmap", {
       center: [32.165623, -82.900078],
   zoom: 6,
       layers: [baseLayer]
@@ -184,7 +184,7 @@ var baseLayer = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.pn
   
     L.control.layers(baseMaps, overlayMaps, {
       collapsed: false
-    }).addTo(map);
+    }).addTo(myMap);
   
   });
   
