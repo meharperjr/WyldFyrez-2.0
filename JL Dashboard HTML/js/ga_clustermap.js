@@ -31,7 +31,7 @@ d3.csv("/data/GA_filtered_fires.csv").then(function(data) {
  
       // Add a new marker to the cluster group and bind a pop-up
       markers.addLayer(L.marker([lat,long])
-        .bindPopup(data[i].STAT_CAUSE_DESCR));
+        .bindPopup("Fire Cause : " + data[i].STAT_CAUSE_DESCR+" - " + "Fire Year : " +data[i].FIRE_YEAR));
     
   }
 
