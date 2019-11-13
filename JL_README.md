@@ -18,22 +18,22 @@
 **Repository:** [WyldFyrez-2.0](https://github.com/meharperjr/WyldFyrez-2.0)
 
 **About:**
-Based on findings from WyldFyrez (Project 1), California and Georgia were found to have the highest number of fires by state. To better understand, we map the causes of the fires and their locations in each state for visual learning. After this, we use past data and supplemental data, such as average, maximum and minimum monthly temperatures, we attempt to predict two features of fires: cause and size category.
+Based on findings from WyldFyrez (Project 1), California and Georgia were found to be the states with the highest number of fires. To gain a greater understanding, we mapped the causes of the fires and their locations (by latitude and longitude) in each state to clearly visualize any patterns. After this, we used historical and supplemental weather data, such as average, maximum, and minimum monthly temperatures, we attempted to predict two features of fires: cause and size category.
 
-Broken down into three segments, we explore:
+Broken down into three segments, we explored:
 1. Fire Causes by State using map visualizations
 2. Fire Expenses by Year
 3. Predictions Using Machine Learning
 
 **Process:**
-We used the same data sources from WyldFyrez and collected suppression firefighting costs and supplemental weather data for the machine learning portion. Once all gathered, we cleaned it using Python and Pandas.
+We used the same data sources from the WyldFyrez project, added in federal fire suppression costs, and supplemental weather data for the machine learning portion. Once all gathered, we cleaned it using Python and Pandas.
 
-Next, we created interactive maps and charts using JavaScript, Chartjs, Node.js, D3, and Leaflet (for maps).
+Next, we created interactive maps and charts using JavaScript, D3, and Leaflet (for maps).
 
-For the machine learning, we attempted to find relationships and their predictability using features of our dataset. Two of the features being predicted include the cause of the fire and the size category of the fires. Our hypothesis was that the cause of the fire would likely not have a good prediction rate due to fires not strongly linked to many of the features of wildfires. However, we believed the fire size category would likely have a higher prediction accuracy rate as weather will likely strongly correlate with the size of a fire.
+For the machine learning portion, we attempted to find relationships and their viablity as prediction factors using features of our dataset. Two of the features used include the cause of the fire and the size category of the fires. Our hypothesis was that the cause of the fire would likely not have a good prediction rate due to fires not strongly linked to many of the features of wildfires. However, we believed the fire size category would likely have a higher prediction accuracy rate as weather will likely strongly correlate with the size of a fire.
 
 
 **Conclusion:**
-Our visualizations were direct and straightforward in providing a visual explanation of the fire causes and concentrations, while the federal firefighting suppression costs were educational and thought-provoking. We found it interesting that costs increased drastically in the last few years, despite number of fires and acres burned not fluctuating too far from their historical trends. 
+Our visualizations were direct and straightforward in providing a visual explanation of the fire causes and concentrations, while the federal fire suppression costs were educational and thought-provoking. We found it interesting that costs increased drastically in the last few years, despite number of fires and acres burned not fluctuating too far from their historical trends. 
 
 From the machine learning, *****************************************.
