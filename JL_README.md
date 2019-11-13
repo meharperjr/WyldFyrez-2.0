@@ -1,17 +1,18 @@
 # WYLDFYRES 2.0
-**Topic:**  Where we take learnings from WyldFyrez (Project 1) and heat it up a level.
+**Topic:**  Where we take learnings from WyldFyrez (Project 1) and heat things up.
 
 **Team and Roles:** 
-- Michael _Leaflet and maps_
+- Michael _Leaflet and Maps_
 - Erin _Python, SQL_
 - Drew _Python, Machine Learning_
 - Jess _HTML, CSS_
 
-**Data Sources:** [U.S. Forest Service (Fire Data)](https://enterprisecontent-usfs.opendata.arcgis.com/datasets/e4d020cb51304d5194860d4464da7ba7_0)
-[Beef2Live (State Acreage)](https://beef2live.com/story-ranking-states-total-acres-0-108930)
-[Wilderness Connect (Wilderness Acreage)](https://www.wilderness.net/NWPS/chartResults?chartType=AcreageByStateMost)
-[National Interagency Fire Center (Suppression Costs)](https://www.nifc.gov/fireInfo/fireInfo_documents/SuppCosts.pdf)
-[National Centers for Environmental Information (Weather Data)](https://www.ncdc.noaa.gov/cag/statewide/time-series/9/tmin/all/1/1992-2005?base_prd=true&begbaseyear=2005&endbaseyear=2005&trend=true&trend_base=10&begtrendyear=2005&endtrendyear=2015)
+**Data Sources:** 
+- [U.S. Forest Service (Fire Data)](https://enterprisecontent-usfs.opendata.arcgis.com/datasets/e4d020cb51304d5194860d4464da7ba7_0)
+- [Beef2Live (State Acreage)](https://beef2live.com/story-ranking-states-total-acres-0-108930)
+- [Wilderness Connect (Wilderness Acreage)](https://www.wilderness.net/NWPS/chartResults?chartType=AcreageByStateMost)
+- [National Interagency Fire Center (Suppression Costs)](https://www.nifc.gov/fireInfo/fireInfo_documents/SuppCosts.pdf)
+- [National Centers for Environmental Information (Weather Data)](https://www.ncdc.noaa.gov/cag/statewide/time-series/9/tmin/all/1/1992-2005?base_prd=true&begbaseyear=2005&endbaseyear=2005&trend=true&trend_base=10&begtrendyear=2005&endtrendyear=2015)
 
 
 **Repository:** [WyldFyrez-2.0](https://github.com/meharperjr/WyldFyrez-2.0)
@@ -33,6 +34,6 @@ For the machine learning, we attempted to find relationships and their predictab
 
 
 **Conclusion:**
-Our visualizations were direct and straightforward in providing a visual explanation of the fires, while the federal firefighting suppression costs were educational and thought-provoking. We found it interesting that costs increased drastically in the last few years, despite number of fires and acres burned not fluctuating too far from its historical trends. 
+Our visualizations were direct and straightforward in providing a visual explanation of the fire causes and concentrations, while the federal firefighting suppression costs were educational and thought-provoking. We found it interesting that costs increased drastically in the last few years, despite number of fires and acres burned not fluctuating too far from their historical trends. 
 
 From the machine learning, *****************************************.
