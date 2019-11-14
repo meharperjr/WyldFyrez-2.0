@@ -894,9 +894,8 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #predictions .predictions-container .background {
-  min-height: 300px; /* changed to 600 */
-  /* min-width: 550px; was added */
-  background: url(https://making-the-web.com/sites/default/files/styles/225x120/public/clipart/146871/blue-square-cliparts-146871-3505020.jpg?itok=kGkn7beI) center top no-repeat;
+  min-height: 300px;
+  background: url(../img/scatter_matrix.png) center top no-repeat;
   margin-bottom: 10px;
 }
 
@@ -975,9 +974,9 @@ body.mobile-nav-active #mobile-nav-toggle {
 }
 
 #thanks .thanks-container .background {
-  min-height: 300px; /* changed to 600 */
-  /* min-width: 550px; was added */
-  background: url(../img/about-img1.jpg) center top no-repeat;
+  min-height: 600px; 
+  min-width: 550px; 
+  background: url(../img/family-photo.jpg) center top no-repeat;
   margin-bottom: 10px;
 }
 

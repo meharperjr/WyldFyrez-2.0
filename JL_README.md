@@ -36,4 +36,4 @@ For the machine learning portion, we attempted to find relationships and their v
 **Conclusion:**
 Our visualizations were direct and straightforward in providing a visual explanation of the fire causes and concentrations, while the federal fire suppression costs were educational and thought-provoking. We found it interesting that costs increased drastically in the last few years, despite number of fires and acres burned not fluctuating too far from their historical trends. 
 
-From the machine learning, *****************************************.
+From the machine learning, there were many factors considered and many attempts made. We are comfortable with the results and with what was learned during the process.
