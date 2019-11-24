@@ -15,7 +15,7 @@ L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 // Store API query variables
 
 // Grab the data with d3
-d3.csv("/data/CA_filtered_fires.csv").then(function(data) {
+d3.csv("Dashboard/data/CA_filtered_fires.csv").then(function(data) {
 
   // Create a new marker cluster group
   var markers = L.markerClusterGroup();

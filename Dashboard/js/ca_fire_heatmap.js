@@ -6,7 +6,7 @@ var baseLayer = L.tileLayer("https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.pn
   });
   
 
-  d3.csv("/data/CA_filtered_fires.csv").then(function(data) { 
+  d3.csv("Dashboard/data/CA_filtered_fires.csv").then(function(data) { 
     console.log(data[0].LATITUDE);
 
     //["NONE", "ARREST, BOOKED", "JUVENILE BOOKED", "EXCEPTIONAL CLEARANCE", "UNFOUNDED", "CLEARED-CONTACT JUVENILE FOR MORE INFO"]

@@ -1,6 +1,6 @@
 
 
-  d3.csv("/data/GA_filtered_fires.csv").then(function(data) { 
+  d3.csv("Dashboard/data/GA_filtered_fires.csv").then(function(data) { 
     
 
     //["NONE", "ARREST, BOOKED", "JUVENILE BOOKED", "EXCEPTIONAL CLEARANCE", "UNFOUNDED", "CLEARED-CONTACT JUVENILE FOR MORE INFO"]
