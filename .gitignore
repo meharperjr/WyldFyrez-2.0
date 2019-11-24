@@ -1,6 +1,5 @@
 /logs
 config.py
-config.js
 /env
 .DS_Store
 .vscode
