@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>WyldFyrez 2.0</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="" name="keywords">
+  <meta content="" name="description">
+
+   <!-- Favicons -->
+  <link href="https://images.vexels.com/media/users/3/137269/isolated/preview/56079bda3325d326dc4307a9cc8aed63-fire-cartoon-silhouette-by-vexels.png" rel="icon">
+  <link href="https://images.vexels.com/media/users/3/137269/isolated/preview/56079bda3325d326dc4307a9cc8aed63-fire-cartoon-silhouette-by-vexels.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Poppins:300,400,500,700" rel="stylesheet">
+
+  <!-- Bootstrap CSS File -->
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Libraries CSS Files -->
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+  <!-- Main Stylesheet File -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+    Theme Name: Regna
+    Theme URL: https://bootstrapmade.com/regna-bootstrap-onepage-template/
+    Author: BootstrapMade.com
+    License: https://bootstrapmade.com/license/
+  ======================================================= -->
+</head>
+
+<body>
+
+  <!--==========================
+  Header
+  ============================-->
+  <header id="header">
+    <div class="container">
+
+      <div id="logo" class="pull-left">
+        <h2><a href="#hero">WyldFyrez 2.0</a></h2>
+      </div>
+      
+      <!-- **** UPDATE ALL href TO MATCH THE PROJECT-->
+      <nav id="nav-menu-container">
+        <ul class="nav-menu">
+          <li class="menu-active"><a href="#hero">Home</a></li>
+          <li><a href="#overview">Overview</a></li>
+          <li><a href="#facts">Facts</a></li>
+          <li><a href="#california">Fire Causes (CA)</a></li>
+          <li><a href="#georgia">Fire Causes (GA)</a></li>
+          <li><a href="#expenses">Fire Expenses</a></li>
+          <li><a href="#predictions">Making Predictions</a></li>
+          <li><a href="#thanks">Thank You</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header><!-- #header -->
+
+  <!--==========================
+    Hero Section
+  ============================-->
+  <section id="hero">
+    <div class="hero-container">
+      <h1>Welcome to WyldFyrez 2.0</h1>
+      <h2>Where we take learnings from WyldFyrez and heat things up to a new level.<p><i>(Not associated in any way with Fyre Festival)</i></p></h2>
+    </div>
+  </section><!-- #hero -->
+
+  <main id="main">
+
+    <!--==========================
+      Overview Section 
+    ============================-->
+    <section id="overview">
+      <div class="container">
+        <div class="row overview-container">
+
+          <div class="col-lg-6 content order-lg-1 order-2">
+            <h2 class="title">Project Overview</h2>
+            <p>
+                Based on findings from WyldFyrez (Project 1), California and Georgia were found to have the highest number of fires by state. To better understand, we map the causes of the fires and their locations in each state for visual learning. After this, we use supplemental data, such as average, maximum and minimum monthly temperatures, and attempt to predict two features of fires: cause and size category.
+            </p>
+
+            <div class="icon-box wow fadeInUp">
+              <div class="icon"></div> 
+              <h4 class="title"><a href="">Fire Causes by State</a></h4>
+              <p class="description">Focusing on fires in California and Georgia, we map out the causes by each state for futher investigation.
+                </p>
+            </div>
+
+            <div class="icon-box wow fadeInUp" data-wow-delay="0.2s">
+              <div class="icon"></div>
+              <h4 class="title"><a href="">Fire Expenses by Year</a></h4>
+              <p class="description">A visualization revealing the federal firefighting suppression costs which include Department of Interior agencies and the U.S. Forest Service.</p>
+            </div>
+
+            <div class="icon-box wow fadeInUp" data-wow-delay="0.4s">
+              <div class="icon"></div>
+              <h4 class="title"><a href="">Predictions with Machine Learning</a></h4>
+              <p class="description">Supplementing the original fire data set with average, min, and max temperatures, we attempt to predict two factors: cause and category size of the fires. 
+                </p>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6 background order-lg-2 order-1 wow fadeInRight"></div>
+        </div>
+
+      </div>
+    </section><!-- #overview -->
+
+    <!--==========================
+      Facts Section
+    ============================-->
+    <section id="facts">
+      <div class="container wow fadeIn">
+        <div class="section-header">
+          <h3 class="section-title">Facts</h3>
+          <p class="section-description">Based on data from 1992 to 2015:</p>
+        </div>
+        <div class="row counters">
+
+  				<div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">189,550</span>
+            <p>Total Wildfires in California</p>
+  				</div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">164,638</span>
+            <p>Total Wildfires in Georgia</p>
+  				</div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">1,821,937</span>
+            <p>Total Wildfires in the U.S.</p>
+  				</div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">1,674,040,000</span>
+            <p>Total Suppression Cost in Dollars</p>
+  				</div>
+
+  			</div>
+
+      </div>
+    </section><!-- #facts -->
+
+    <!--==========================
+      CA Fire Cause Map Section 
+    ============================-->
+    <!-- Map -->
+    <!-- Leaflet CSS & JS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css" integrity="sha512-Rksm5RenBEKSKFjgI3a41vrjkw4EVPlJ3+OiI65vTjIdo9brlAacEuKOiQ5OFh7cOI1bkDwLqdLw3Zg0cRJAAQ==" crossorigin="" />
+    <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet.markercluster@1.0.3/dist/MarkerCluster.css">
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js" integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q==" crossorigin=""></script>
+
+    <!-- Marker Cluster JS & CSS -->
+    <script type="text/javascript" src="https://unpkg.com/leaflet.markercluster@1.0.3/dist/leaflet.markercluster.js"></script>  
+    <script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"
+    integrity="sha512-tAGcCfR4Sc5ZP5ZoVz0quoZDYX5aCtEm/eu1KhSLj2c9eFrylXZknQYmxUssFaVJKvvc0dJQixhGjG2yXWiV9Q=="
+    crossorigin=""></script>
+
+    <section id="california">
+        <div class="container wow fadeInUp">
+          <div class="section-header">
+            <h3 class="section-title">California Fire Cause Maps</h3>
+            <p class="section-description">The California heat map shows the quantity and locations of fires while the cluster map shows the cause of the fires.</p>
+          </div>
+          <!-- NEWLY ADDED FOR CA MAPS -->
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                  <div id="ca_heatmap" style ="width: 100% ; height:500px"></div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                  <div id="ca_clus" style ="width: 100% ; height:500px"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+          </div>
+  
+        </div>
+      </section><!-- #california -->
+
+    <!--==========================
+      GA Fire Cause Map Section 
+    ============================-->
+    <section id="georgia">
+        <div class="container wow fadeInUp">
+          <div class="section-header">
+            <h3 class="section-title">Georgia Fire Cause Map</h3>
+            <p class="section-description">The Georgia heat map shows the quantity and locations of fires while the cluster map shows the cause of the fires.</p>
+            </p>
+          </div>
+        </div>
+        <!-- NEWLY ADDED FOR GA MAPS -->
+        <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                  <div id="ga_heatmap" position="static" style ="width: 100% ; height:500px"></div>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-md-12">
+                  <div id="ga_clus" style ="width: 100% ; height:500px"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </section><!-- #georgia -->
+
+    <!--==========================
+      Expenses Section 
+    ============================-->
+    <section id="expenses">
+        <div class="container">
+          <div class="row expenses-container">
+  
+            <div class="col-lg-6 content order-lg-1 order-2">
+              <h2 class="title">Fire Expenses</h2>
+              <p>
+              A visualization revealing the federal firefighting suppression costs which include Department of Interior agencies and the U.S. Forest Service from 1985 to 2018.  
+              </p>
+              <p>
+              The Department of Interior (DOI) agencies include: the Bureau of Indian Affairs, Bureau of Land Management; National Park Service; and U.S. Fish and Wildlife Service. The annual fires and total acres include private, state, and federal lands in the United States.
+              </p>
+            </div>
+  
+            <div class="col-lg-6 background order-lg-2 order-1 wow fadeInRight"></div>
+          </div>
+  
+        </div>
+      </section><!-- #expenses -->
+
+    <!--==========================
+      Predictions (Machine Learning) Section 
+    ============================-->
+    <section id="predictions">
+        <div class="container">
+          <div class="row predictions-container">
+  
+            <div class="col-lg-6 content order-lg-1 order-2">
+              <h2 class="title">Making Predictions with Machine Learning</h2>
+              <p>
+              We are attempting to find relationships and their predictability between features of our dataset. Two of the features being predicted include the cause of the fire and the size category of the fires. The cause of the fire is not likely going to get a very good prediction rate due to fires not strongly linked  to many of the features of wildfires. However, the fire size category will likely have a higher prediction accuracy rate as weather will likely strongly correlate with the size of a fire.  
+              </p>
+
+              <div class="icon-box wow fadeInUp">
+                <div class="icon"></div>
+                <h4 class="title"><a href="">Data Used for California and Georgia</a></h4>
+                <p class="description">Fire size, year and month, average monthly temperature, maximum monthly temperature, minimum monthly temperature, and fire cause.
+                </p>
+              </div>
+  
+            </div>
+  
+            <div class="col-lg-6 background order-lg-2 order-1 wow fadeInRight"></div>
+          </div>
+  
+        </div>
+      </section><!-- #predictions -->
+
+    <!--==========================
+      Thank You Section 
+    ============================-->
+    <section id="thanks">
+        <div class="container">
+          <div class="row thanks-container">
+  
+            <div class="col-lg-6 content order-lg-1 order-2">
+              <h2 class="title">Thank You</h2>
+              <p>We hope you enjoyed our presentation.</p> 
+            </div>
+  
+            <div class="col-lg-6 background order-lg-2 order-1 wow fadeInRight"></div>
+          </div>
+  
+        </div>
+      </section><!-- #thanks -->
+
+  </main>
+
+  <!--==========================
+    Footer : DO NOT NEED
+  ============================-->
+  <footer id="footer">
+    <div class="footer-top">
+      <div class="container">
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong>Regna</strong>. All Rights Reserved
+      </div>
+      <div class="credits">
+        <!--
+          All the links in the footer should remain intact.
+          You can delete the links only if you purchased the pro version.
+          Licensing information: https://bootstrapmade.com/license/
+          Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=Regna
+        -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer><!-- #footer -->
+
+  <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+  <!-- JavaScript Libraries -->
+  <script src="lib/jquery/jquery.min.js"></script>
+  <script src="lib/jquery/jquery-migrate.min.js"></script>
+  <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="lib/easing/easing.min.js"></script>
+  <script src="lib/wow/wow.min.js"></script>
+  <script src="lib/waypoints/waypoints.min.js"></script>
+  <script src="lib/counterup/counterup.min.js"></script>
+  <script src="lib/superfish/hoverIntent.js"></script>
+  <script src="lib/superfish/superfish.min.js"></script>
+
+  <!-- Template Main Javascript File -->
+  <script src="js/main.js"></script>
+
+  <!-- Our JS -->
+  <!-- Marker Cluster JS & CSS -->
+  <script type="text/javascript" src="https://unpkg.com/leaflet.markercluster@1.0.3/dist/leaflet.markercluster.js"></script>
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet.markercluster@1.0.3/dist/MarkerCluster.css">
+  <link rel="stylesheet" type="text/css" href="https://unpkg.com/leaflet.markercluster@1.0.3/dist/MarkerCluster.Default.css">
+  <script src="js/jquery.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/jquery.smooth-scroll.min.js"></script>
+  <script src="js/jquery.dlmenu.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/custom.js"></script>
+  <script type="text/javascript" src="js/SliderControl.js"></script>
+  <script type="text/javascript" src="js/leaflet-heat.js"></script>
+  <script type="text/javascript" src="js/config.js"></script>
+  <script type="text/javascript" src="js/ca_fire_heatmap.js"></script>  
+  <script type="text/javascript" src="js/ga_clustermap.js"></script>
+  <script type="text/javascript" src="js/ca_clustermap.js"></script>  
+  <script type="text/javascript" src="js/ga_fire_heatmap.js"></script>
+  
+</body>
+</html>
