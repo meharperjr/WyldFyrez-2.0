@@ -16,6 +16,7 @@
 
 
 **Repository:** [WyldFyrez-2.0](https://github.com/meharperjr/WyldFyrez-2.0)
+**Website** [WyldFyrez-2.0] (https://meharperjr.github.io/WyldFyrez-2.0/)
 
 **About:**
 Based on findings from WyldFyrez (Project 1), California and Georgia were found to be the states with the highest number of fires. To gain a greater understanding, we mapped the causes of the fires and their locations (by latitude and longitude) in each state to clearly visualize any patterns. After this, we used historical and supplemental weather data, such as average, maximum, and minimum monthly temperatures, we attempted to predict two features of fires: cause and size category.
