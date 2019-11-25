@@ -3,7 +3,7 @@
 
 **Team and Roles:** 
 - Michael _Leaflet and Maps_
-- Erin _Python, SQL_
+- Erin _Data_Mining
 - Drew _Python, Machine Learning_
 - Jess _HTML, CSS_
 
